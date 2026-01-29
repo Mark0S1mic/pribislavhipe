@@ -1,0 +1,36 @@
+baseURL = 'http://example.org/'
+languageCode = 'sr-RS'
+title = 'Pribislavhipe'
+theme = 'paper'
+
+# --- NEW PAGINATION SETTING ---
+# This fixes the error you saw
+[pagination]
+  pagerSize = 10
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+# --- MENU SETTINGS ---
+[menu]
+  [[menu.main]]
+    identifier = "poezija"
+    name = "Poezija"
+    url = "/poezija/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "proza"
+    name = "Proza"
+    url = "/proza/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "o-meni"
+    name = "O Autoru"
+    url = "/o-autoru/"
+    weight = 30
+
+
+[params]
+  customCSS = ["css/custom.css"]

@@ -1,0 +1,34 @@
+/* Import a beautiful book font (Merriweather and Playfair Display) */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    background-color: #fdf6e3; /* Cream/Old Paper color */
+    color: #2c2925; /* Soft black, like ink */
+    font-family: 'Merriweather', serif; /* Body text */
+}
+
+h1, h2, h3, .header {
+    font-family: 'Playfair Display', serif; /* Titles */
+    letter-spacing: 0.5px;
+}
+
+/* The Main Container - Looks like a page */
+.container {
+    background-color: #fffef8;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 60px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Soft shadow for depth */
+    border: 1px solid #e8e4d9;
+}
+
+/* Links look like underlined handwritten notes */
+a {
+    color: #8b5e3c; /* Sepia link color */
+    text-decoration: underline;
+    text-decoration-color: #dccfb8;
+}
+
+a:hover {
+    background-color: #faeacc;
+}

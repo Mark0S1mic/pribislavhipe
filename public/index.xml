@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pribislavhipe</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Pribislavhipe</description>
+    <generator>Hugo</generator>
+    <language>sr-RS</language>
+    <lastBuildDate>Thu, 29 Jan 2026 10:23:26 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prva Pesma</title>
+      <link>http://localhost:1313/poezija/prva-pesma/</link>
+      <pubDate>Thu, 29 Jan 2026 10:23:26 +0100</pubDate>
+      <guid>http://localhost:1313/poezija/prva-pesma/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>O Autoru</title>
+      <link>http://localhost:1313/o-autoru/</link>
+      <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/o-autoru/</guid>
+      <description>&lt;p&gt;Dobrodošli na Pribislavhipe.&lt;/p&gt;&#xA;&lt;p&gt;Ovde objavljujem svoje lične zapise&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

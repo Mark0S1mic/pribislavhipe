@@ -1,0 +1,46 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "static/images" # Where images are saved
+public_folder: "/images"
+
+# This allows you to login locally if you run a special proxy server (optional for now)
+local_backend: true 
+
+collections:
+  # --- POEZIJA COLLECTION ---
+  - name: "poezija"
+    label: "Poezija"
+    folder: "content/poezija"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Naslov", name: "title", widget: "string"}
+      - {label: "Datum", name: "date", widget: "datetime"}
+      - {label: "Sadržaj", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list", default: ["poezija"]}
+
+  # --- PROZA COLLECTION ---
+  - name: "proza"
+    label: "Proza"
+    folder: "content/proza"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Naslov", name: "title", widget: "string"}
+      - {label: "Datum", name: "date", widget: "datetime"}
+      - {label: "Kratak opis", name: "description", widget: "text"}
+      - {label: "Priča", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list", default: ["proza"]}
+
+  # --- O AUTORU PAGE ---
+  - name: "pages"
+    label: "Stranice"
+    files:
+      - name: "about"
+        label: "O Autoru"
+        file: "content/o-autoru.md"
+        fields:
+          - {label: "Naslov", name: "title", widget: "string"}
+          - {label: "Tekst", name: "body", widget: "markdown"}
