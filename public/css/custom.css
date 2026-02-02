@@ -1,34 +1,122 @@
-/* Import a beautiful book font (Merriweather and Playfair Display) */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
-
-body {
-    background-color: #fdf6e3; /* Cream/Old Paper color */
-    color: #2c2925; /* Soft black, like ink */
-    font-family: 'Merriweather', serif; /* Body text */
+/* =========================================
+   1. THE LEATHER BOOK COVER (Background)
+   ========================================= */
+/* LIGHT MODE: Rich "Cognac" Leather */
+html, body {
+    transition: background-color 0.3s ease;
+    min-height: 100vh;
+    margin: 0;
+    
+    background-color: #8b5a2b !important; 
+    background-image: url("https://www.transparenttextures.com/patterns/leather.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
 }
 
-h1, h2, h3, .header {
-    font-family: 'Playfair Display', serif; /* Titles */
-    letter-spacing: 0.5px;
+/* DARK MODE: "Midnight" Leather */
+html.dark body {
+    /* This changes the SURROUNDINGS to dark chocolate/black */
+    background-color: #2a1a12 !important; 
+    background-image: url("https://www.transparenttextures.com/patterns/leather.png") !important;
 }
 
-/* The Main Container - Looks like a page */
-.container {
-    background-color: #fffef8;
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 60px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Soft shadow for depth */
-    border: 1px solid #e8e4d9;
+/* =========================================
+   2. THE OPEN PAGE (Always Light Paper)
+   ========================================= */
+main {
+    /* TEXTURE: Old Map + Cream Gradient (Used for BOTH modes now) */
+    background-image: url("https://www.transparenttextures.com/patterns/old-map.png"), 
+                      linear-gradient(to right, #f2e6d5, #fffbf0) !important;
+    background-color: #f4ecd8 !important;
+    
+    /* INK COLOR: Always Dark (Since paper is always light) */
+    color: #1a1512 !important; 
+
+    /* OPEN BOOK SHAPE */
+    margin: 3rem auto !important; 
+    max-width: 720px !important;
+    width: 90% !important;
+    min-height: 85vh;
+    padding: 80px 70px !important;
+    
+    /* 3D SPINE SHADOW */
+    box-shadow: 
+        inset 45px 0 50px -20px rgba(0,0,0,0.25), /* Spine shadow */
+        5px 5px 15px rgba(0,0,0,0.6),             /* Drop shadow */
+        20px 20px 50px rgba(0,0,0,0.4) !important;
+        
+    border-radius: 2px 6px 6px 2px !important;
+    border-left: 1px solid #c7bca0 !important;
 }
 
-/* Links look like underlined handwritten notes */
-a {
-    color: #8b5e3c; /* Sepia link color */
-    text-decoration: underline;
-    text-decoration-color: #dccfb8;
+/* DARK MODE ADJUSTMENT FOR PAGE */
+/* We only change the outer shadow to pop against the dark desk */
+html.dark main {
+    box-shadow: 
+        inset 45px 0 50px -20px rgba(0,0,0,0.25), /* Keep spine shadow */
+        0 0 20px rgba(0,0,0,0.8),                 /* Glow/Shadow on dark desk */
+        0 0 50px rgba(0,0,0,0.5) !important;
+    border-color: #c7bca0 !important; /* Keep light border */
 }
 
-a:hover {
-    background-color: #faeacc;
+/* =========================================
+   3. BOOK TYPOGRAPHY (17th Century Style)
+   ========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=IM+Fell+English:ital@0;1&display=swap');
+
+/* Body Text */
+p, li, span {
+    font-family: 'IM Fell English', serif; 
+    font-size: 22px !important;
+    line-height: 1.6 !important;
+    text-align: justify;
+    hyphens: auto;
+    color: #1a1512 !important; /* Force dark ink even in dark mode */
+}
+
+/* Titles */
+h1, h2, h3 {
+    font-family: 'Cinzel', serif;
+    color: #4a3b2a !important; /* Always dark brown ink */
+    text-align: center;
+    margin-top: 2.5rem !important;
+    letter-spacing: 2px;
+}
+
+/* Chapter Title Decoration */
+h1 {
+    font-size: 2.5rem !important;
+    border-bottom: 2px solid #8c7b65;
+    padding-bottom: 25px;
+    margin-bottom: 45px;
+}
+
+/* Links */
+main a {
+    color: #8b4513 !important;
+    text-decoration: none;
+    border-bottom: 1px dashed #8b4513;
+    font-style: italic;
+}
+main a:hover {
+    color: #d35400 !important;
+    border-bottom: 1px solid #d35400;
+}
+
+/* =========================================
+   4. HIDDEN ELEMENTS & HEADER
+   ========================================= */
+article footer, .post-tags, .tags { display: none !important; }
+
+/* Header Background Transparent */
+header, .nav-wrapper { background: transparent !important; }
+
+/* Site Logo - Always Gold/Light to contrast with the Leather cover */
+.header .logo, header a {
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #f0e6d2 !important; /* Parchment white */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); /* Embossed effect */
+    text-decoration: none !important;
 }

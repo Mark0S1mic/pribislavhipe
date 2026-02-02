@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Poezijas on Pribislavhipe</title>
-    <link>http://localhost:1313/poezija/</link>
-    <description>Recent content in Poezijas on Pribislavhipe</description>
+    <title>Poezija on Pribislavhipe</title>
+    <link>http://localhost:1313/tags/poezija/</link>
+    <description>Recent content in Poezija on Pribislavhipe</description>
     <generator>Hugo</generator>
     <language>sr-RS</language>
     <lastBuildDate>Mon, 02 Feb 2026 11:18:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/poezija/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/poezija/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test Iz Admina</title>
       <link>http://localhost:1313/poezija/test-iz-admina/</link>
       <pubDate>Mon, 02 Feb 2026 11:18:00 +0100</pubDate>
       <guid>http://localhost:1313/poezija/test-iz-admina/</guid>
       <description>&lt;p&gt;Test Iz Admina&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Prva Pesma</title>
-      <link>http://localhost:1313/poezija/prva-pesma/</link>
-      <pubDate>Thu, 29 Jan 2026 10:23:26 +0100</pubDate>
-      <guid>http://localhost:1313/poezija/prva-pesma/</guid>
-      <description>&lt;p&gt;pesma&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

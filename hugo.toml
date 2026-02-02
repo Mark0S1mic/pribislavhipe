@@ -2,6 +2,8 @@ baseURL = 'http://example.org/'
 languageCode = 'sr-RS'
 title = 'Pribislavhipe'
 theme = 'paper'
+# This stops Hugo from creating /tags/xxx pages completely
+disableKinds = ["taxonomy", "term"]
 
 # --- NEW PAGINATION SETTING ---
 # This fixes the error you saw

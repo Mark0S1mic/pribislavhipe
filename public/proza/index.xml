@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Prozas on Pribislavhipe</title>
+    <link>http://localhost:1313/proza/</link>
+    <description>Recent content in Prozas on Pribislavhipe</description>
+    <generator>Hugo</generator>
+    <language>sr-RS</language>
+    <lastBuildDate>Mon, 02 Feb 2026 11:39:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/proza/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prica</title>
+      <link>http://localhost:1313/proza/prica/</link>
+      <pubDate>Mon, 02 Feb 2026 11:39:00 +0100</pubDate>
+      <guid>http://localhost:1313/proza/prica/</guid>
+      <description>&lt;p&gt;Prica&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
