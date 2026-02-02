@@ -1,6 +1,6 @@
-baseURL = 'http://example.org/'
+baseURL = '/'
 languageCode = 'sr-RS'
-title = 'Pribislavhipe'
+title = 'Pribislav Hipe'
 theme = 'paper'
 # This stops Hugo from creating /tags/xxx pages completely
 disableKinds = ["taxonomy", "term"]
